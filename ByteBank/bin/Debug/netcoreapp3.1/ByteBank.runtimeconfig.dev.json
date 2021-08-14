@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Vortex\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Vortex\\.nuget\\packages"
+    ]
+  }
+}

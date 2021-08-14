@@ -1,0 +1,13 @@
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\bin\Debug\netcoreapp3.1\ByteBank.exe
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\bin\Debug\netcoreapp3.1\ByteBank.deps.json
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\bin\Debug\netcoreapp3.1\ByteBank.runtimeconfig.json
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\bin\Debug\netcoreapp3.1\ByteBank.runtimeconfig.dev.json
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\bin\Debug\netcoreapp3.1\ByteBank.dll
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\bin\Debug\netcoreapp3.1\ByteBank.pdb
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.csproj.AssemblyReference.cache
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.AssemblyInfoInputs.cache
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.AssemblyInfo.cs
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.dll
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.pdb
+C:\Users\Vortex\Desktop\EstuodosAlura\ByteBank\ByteBank\obj\Debug\netcoreapp3.1\ByteBank.genruntimeconfig.cache
