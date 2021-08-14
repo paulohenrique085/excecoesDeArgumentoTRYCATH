@@ -31,23 +31,23 @@ namespace ByteBank
         public static int _qtdeDeContas { get; private set; }
         public static double TaxaOperacao { get; private set; }
         
-        public ContaCorrente(string titular,int numeroDaConta,int agencia)
+        public ContaCorrente(string titular,int numeroDaConta,int Numeroagencia)
         {
            
-            if (agencia<=0)
+            if (Numeroagencia <= 0)
             {  
              //lançador
-                throw new ArgumentException("O argumento agencia deve ser maior que 0");
+                throw new ArgumentException("O argumento agencia deve ser maior que 0",nameof(numeroDaConta));
             }
             if (numeroDaConta<=0)
-            {
-                throw new ArgumentException("O argumento numeroDaConta deve ser maior que 0");
+            {                                                                                                               
+                throw new ArgumentException("O argumento numeroDaConta deve ser maior que 0", nameof(Numeroagencia));
             }
 
 
             Titular = titular;
             NumeroDaConta = numeroDaConta;
-            Agencia = agencia;
+            Agencia = Numeroagencia;
 
            _qtdeDeContas++;
         }

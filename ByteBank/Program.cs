@@ -9,11 +9,12 @@ namespace ByteBank
             
             try
             {
-                ContaCorrente conta1 = new ContaCorrente("PAULO HENRIQUE SILVA DOS SANTOS",1160397,1234);
+                ContaCorrente conta1 = new ContaCorrente("PAULO HENRIQUE SILVA DOS SANTOS",0,1234);
             }
             //os caths mais específicos devem vir primeiro
             catch (ArgumentException ex)
-            {
+            {   
+                Console.WriteLine("Argumento com problema: "+ex.ParamName);
                 Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException ");
                 Console.WriteLine(ex.Message);
 
