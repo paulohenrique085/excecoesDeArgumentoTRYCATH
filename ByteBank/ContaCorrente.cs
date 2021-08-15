@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ByteBank
+
+namespace ByteBank.Excecoes
 {
     class ContaCorrente
     {
@@ -31,55 +32,53 @@ namespace ByteBank
         public static int _qtdeDeContas { get; private set; }
         public static double TaxaOperacao { get; private set; }
         
-        public ContaCorrente(string titular,int numeroDaConta,int Numeroagencia)
+        public ContaCorrente(string titular,int numeroDaConta,int numeroagencia)
         {
            
-            if (Numeroagencia <= 0)
+            if (numeroDaConta <= 0)
             {  
-             //lançador
-                throw new ArgumentException("O argumento agencia deve ser maior que 0",nameof(numeroDaConta));
+              //lançador
+                throw new ArgumentException("O argumento numeroDaConta deve ser maior que 0", nameof(numeroDaConta));
             }
-            if (numeroDaConta<=0)
+            if (numeroagencia <= 0)
             {                                                                                                               
-                throw new ArgumentException("O argumento numeroDaConta deve ser maior que 0", nameof(Numeroagencia));
+                throw new ArgumentException("O argumento numeroagencia deve ser maior que 0", nameof(numeroagencia));
             }
 
 
             Titular = titular;
             NumeroDaConta = numeroDaConta;
-            Agencia = Numeroagencia;
+            Agencia = numeroagencia;
 
            _qtdeDeContas++;
+            TaxaOperacao = 30 / _qtdeDeContas;
         }
 
-        public static  int QuantidadeDeContas()
+        public static int QuantidadeDeContas()
         {
             return _qtdeDeContas;
         }
-        public bool Depositar(double valorDeposito)
+        public void Depositar(double valorDeposito)
         {
             if (valorDeposito<=0)
             {
-                Console.WriteLine("Valor inválido");
-                return false;
+                throw new ValorDepositoInvalidoException("O valor a ser depositado é menor que 0");
             }
-            else { 
-                 Saldo += valorDeposito;
-                return true;
+            else {
+                Saldo += valorDeposito;
             }
             
         }
-        public bool Sacar(double valorSaque)
+        public void Sacar(double valorSaque)
         {
             if (Saldo < valorSaque)
             {
-                Console.WriteLine("Saldo insuficiente para saque, seu saldo é: " + Saldo);
-                return false;
+                throw new SaldoInsuficienteException("Saldo insuficiente para o valor de "+valorSaque);
             }
             else
             { 
                 Saldo -= valorSaque;
-                return true;
+              
             }
              
         }
